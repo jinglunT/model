@@ -50,5 +50,6 @@ a {
 p {
   max-width: 600px;
   margin: auto;
+  text-align: left;
 }
 </style>
