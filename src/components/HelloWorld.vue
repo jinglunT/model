@@ -49,7 +49,8 @@ a {
 }
 p {
   max-width: 600px;
-  margin: auto;
+  margin: 16px auto;
   text-align: left;
+  line-height: 1.6;
 }
 </style>
