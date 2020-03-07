@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <nav ="navbar">
+      <router-link to = "/">首頁</router-link>
+      <router-link to = "/tools">工具</router-link>
+    </nav>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
