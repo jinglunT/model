@@ -3,7 +3,8 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for = "t in tools">
-        <img :src="'/static/' + t"> 
+        <img :src="'/static/' + t" /> 
+        }
       </li>
     </ul>
   </div>
