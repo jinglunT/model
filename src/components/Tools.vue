@@ -3,7 +3,8 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for = "t in tools">
-        <img :src="'/static/' + t"> 
+        <img :src="'/static/' + t.src"> 
+        <h3>{{ t.name }}</h3>
       </li>
     </ul>
   </div>
@@ -15,7 +16,11 @@ export default {
   data () {
     return {
       msg: '常用模型工具',
-      tools: ['IMG_9836.JPG', 'IMG_9840.JPG', 'IMG_9843.JPG']
+      tools: [
+      {src: 'IMG_9836.JPG', name: '常用工具'},
+      {src: 'IMG_9840.JPG', name: '模型膠'},
+      {src: 'IMG_9843.JPG', name: '斜口鉗'}
+      ]
     }
   }
 }
