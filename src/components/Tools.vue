@@ -3,8 +3,9 @@
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for = "t in tools" v-bind:key = "t.src">
+        <h3>{{ t.name }}:</h3>
         <img :src="'/static/' + t.src"/>
-        <h3>{{ t.name }}</h3>
+        <p v-if="t.des">{{ t.des }}</p>
       </li>
     </ul>
   </div>
@@ -17,8 +18,9 @@ export default {
     return {
       msg: '常用模型工具',
       tools: [
-        {src: 'IMG_9836.JPG', name: '常用工具'},
+        {src: 'IMG_9836.JPG', name: '常用工具', des: '我的常用工具'},
         {src: 'IMG_9840.JPG', name: '模型膠'},
+        {src: 'IMG_9843.JPG', name: '斜口鉗'},
         {src: 'IMG_9843.JPG', name: '斜口鉗'}
       ]
     }
