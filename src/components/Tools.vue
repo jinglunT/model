@@ -21,7 +21,12 @@ export default {
         {src: 'IMG_9836.JPG', name: '常用工具', des: '我的常用工具'},
         {src: 'IMG_9840.JPG', name: '模型膠'},
         {src: 'IMG_9843.JPG', name: '斜口鉗'},
-        {src: 'IMG_9843.JPG', name: '斜口鉗'}
+        {src: 'IMG_9848.JPG', name: '筆刀'},
+        {src: 'IMG_9851.JPG', name: '手鑽'},
+        {src: 'IMG_9856.JPG', name: '鑷子'},
+        {src: 'IMG_9857.JPG', name: '噴筆'},
+        {src: 'IMG_9859.JPG', name: '防毒面具'}
+
       ]
     }
   }
