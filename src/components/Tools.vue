@@ -19,7 +19,7 @@ export default {
       msg: '常用模型工具',
       tools: [
         {src: 'IMG_9836.JPG', name: '常用工具', des: '我的常用工具'},
-        {src: 'IMG_9840.JPG', name: '模型膠'},
+        {src: 'IMG_9840.JPG', name: '模型膠', des: '是一種高濃度的溶劑,可藉由溶解塑膠來黏合模型'},
         {src: 'IMG_9843.JPG', name: '斜口鉗'},
         {src: 'IMG_9848.JPG', name: '筆刀'},
         {src: 'IMG_9851.JPG', name: '手鑽'},
