@@ -5,7 +5,7 @@
       <router-link to = "/tools">工具</router-link>
       <router-link to = "/chat">留言板</router-link>
     </nav>
-    <router-view/>
+    <router-view :chats = "chats", @submit = "submit"/>
   </div>
 </template>
 
@@ -21,6 +21,22 @@ export default {
   data () {
     return {
       chats: undefined
+    }
+  },
+  methods: {
+    submit: function (n, email, t) {
+      var o = {
+        n: n,
+        email: email,
+        t: t,
+        time: (new Date()).getTime()
+      }
+      if (t) {
+        this.$firebaseRefs.chats.push(o)
+        window.alert('留言已送出')
+      } else {
+        window.alert('請輸入留言')
+      }
     }
   }
 }
