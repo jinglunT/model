@@ -1,8 +1,8 @@
 <template>
   <div class="chats">
     <ul>
-      <li v-for = "c in chats">
-        {{ c.name }} says: {{ c.t }}
+      <li v-for = "c in chats" :key=" c.time">
+        {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
       </li>
     </ul>
     <h3> {{ msg }}</h3>
