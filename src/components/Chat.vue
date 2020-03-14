@@ -7,8 +7,6 @@
       .ui.comments
         h3.ui.dividing.header 歡迎留言
         .comment(v-for="c in chats" :key="c.time")
-          a.avatar
-            img(src="../assets/logo.png")
           .content
             a.author(:href="'mailto:' + c.email", target="_blank")   {{ c.n }} 說：
             .text {{ c.t }}
