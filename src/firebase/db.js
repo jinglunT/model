@@ -2,15 +2,14 @@ import firebase from 'firebase/app'
 import 'firebase/database'
 
 export const db = firebase.initializeApp(
-  {
-    apiKey: 'AIzaSyCB0ld6l5VUuoc4Xodym9aVIw_pAe1Ho2U',
-    authDomain: 'hack-bestian.firebaseapp.com',
-    databaseURL: 'https://hack-bestian.firebaseio.com',
-    projectId: 'hack-bestian',
-    storageBucket: 'hack-bestian.appspot.com',
-    messagingSenderId: '100244779785',
-    appId: '1:100244779785:web:8975e15ed48f299ae2d9d8',
-    measurementId: 'G-NXRRCJB510' }
+  { apiKey: "AIzaSyBat87rpMCQdMEg4dXQbkURHMDfR_UeaGQ",
+    authDomain: "model-340b0.firebaseapp.com",
+    databaseURL: "https://model-340b0.firebaseio.com",
+    projectId: "model-340b0",
+    storageBucket: "model-340b0.appspot.com",
+    messagingSenderId: "606616504213",
+    appId: "1:606616504213:web:fa153f6ece989ac03c189c",
+    measurementId: "G-CZ3FRV765J"}
 ).database()
 
 export const chatsRef = db.ref('chats')
