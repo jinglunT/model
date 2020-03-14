@@ -9,8 +9,19 @@
 </template>
 
 <script>
+
+import { chatsRef } from './firebase/db'
+
 export default {
-  name: 'App'
+  name: 'App',
+  firebase: {
+    chats: chatsRef
+  },
+  data () {
+    return {
+      chats: undefined
+    }
+  }
 }
 </script>
 
