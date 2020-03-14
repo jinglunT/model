@@ -5,7 +5,7 @@
       <router-link to = "/tools">工具</router-link>
       <router-link to = "/chat">留言板</router-link>
     </nav>
-    <router-view :chats = "chats", @submit = "submit"/>
+    <router-view :chats = "chats" @submit = "submit"/>
   </div>
 </template>
 

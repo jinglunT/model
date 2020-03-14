@@ -6,6 +6,7 @@ import router from './router'
 import { rtdbPlugin } from 'vuefire'
 
 Vue.config.productionTip = false
+Vue.use(rtdbPlugin)
 
 /* eslint-disable no-new */
 new Vue({
