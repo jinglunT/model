@@ -3,7 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import SuiVue from 'semantic-ui-vue'
+import '@babel/polyfill'
 import { rtdbPlugin } from 'vuefire'
+
+Vue.use(SuiVue)
+Vue.use(rtdbPlugin)
 
 Vue.config.productionTip = false
 
