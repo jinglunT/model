@@ -1,38 +1,28 @@
-<template lang="pug">
-  .chats
-    sui-header(size="large") {{ msg }}
-    router-link(to="/")
-      img.logo(src="../assets/logo.png")
-    .ui.left.aligned.segment.container
-      .ui.comments
-        h3.ui.dividing.header 歡迎留言
-        .comment(v-for="c in chats" :key="c.time")
-          .content
-            a.author(:href="'mailto:' + c.email", target="_blank")   {{ c.n }} 說：
-            .text {{ c.t }}
-              .metadata
-                span.date {{ parseTime(c.time) }}
-      .ui.form
-        .two.fields
-          .required.field
-            label 您的大名:
-            input(type='text' v-model="myName")
-          .required.field
-            label Email:
-            input(type='email' v-model="myEmail")
-          .required.field
-            label 請留言:
-            input(type='text' v-model="myText" placeholder="您想說什麼？")
-        .ui.submit.button(@click="submit(myName, myEmail, myText)") 留言
-      br
-      br
+<template>
+  <div class="chats">
+    <ul>
+      <li v-for = "c in chats">
+        {{ c.name }} says: {{ c.t }}
+      </li>
+    </ul>
+    <h3> {{ msg }}</h3>
+    <form>
+      <label> 您的大名: </label>
+      <input type='text' v-model="myName" />
+      <label> Email: </label>
+      <input type='email' v-model="myEmail" />
+      <label> 請留言: </label>
+      <input type='text' v-model="myText" placeholder="您想說什麼？"/>
+      button(@click="submit(myName, myEmail, myText)") 留言
+    </form>
+  </div>
 
 </template>
 <script>
 
 export default {
   name: 'Chat',
-  props: ['likes', 'chats'],
+  props: ['chats'],
   data () {
     return {
       msg: '留言版',
