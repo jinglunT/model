@@ -3,6 +3,7 @@
     <nav id="navbar">
       <router-link to = "/">首頁</router-link>
       <router-link to = "/tools">工具</router-link>
+      <router-link to = "/chat">留言板</router-link>
     </nav>
     <router-view/>
   </div>
