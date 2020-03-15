@@ -10,7 +10,8 @@
 ## 進入專案
 
 ``` bash
-cd Documents/model
+cd Documents
+cd model
 npm run dev
 
 ## Build Setup
