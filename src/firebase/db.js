@@ -12,4 +12,4 @@ export const db = firebase.initializeApp(
     measurementId: 'G-CZ3FRV765J'}
 ).database()
 
-export const chatsRef = db.ref('chats')
+export const chatsRef = db.ref('chats') // export => 輸出

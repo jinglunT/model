@@ -1,11 +1,11 @@
 <template>
   <div class="chats">
+    <h3> {{ msg }}</h3>
     <ul>
       <li v-for = "c in chats" :key=" c.time">
         {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
       </li>
     </ul>
-    <h3> {{ msg }}</h3>
     <form>
       <label> 您的大名: </label>
       <input type='text' v-model="myName" />
@@ -36,7 +36,7 @@ export default {
       this.myName = '訪客'
       this.myEmail = ''
       this.myText = ''
-      this.$emit('submit', n, email, t)
+      this.$emit('submit', n, email, t) // 對上層元件說'submit', 並傳n, email, t給它
     },
     parseTime: function (t) {
       return (new Date(t)).toLocaleDateString()
@@ -47,5 +47,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+/* css code here <---  */
 
 </style>
