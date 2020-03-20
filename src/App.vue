@@ -5,8 +5,8 @@
       <router-link to = "/tools">工具</router-link>
       <router-link to = "/chat">留言板</router-link>
     </nav>
-    <router-view :chats = "chats" @submit = "submit"/> 
-    <!-- :chats = "chats" 是把 chats 送進 子元件裡 --> 
+    <router-view :chats = "chats" @submit = "submit" />
+    <!-- :chats = "chats" 是把 chats 送進 子元件裡 -->
     <!-- @submit = "submit" 是聽 submit 事件時，運作submit函式 -->
   </div>
 </template>
@@ -58,8 +58,7 @@ export default {
   margin-top: 60px;
 }
 
-.router-link-exact-active.router-link-active {   
-
+.router-link-exact-active.router-link-active {
   /* 導行列被選到的部份 */
 }
 
