@@ -38,4 +38,10 @@ export default {
 img {
   width: 45%;
 }
+
+img.small {
+}
+
+img.big {
+}
 </style>
