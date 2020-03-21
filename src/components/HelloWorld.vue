@@ -1,7 +1,5 @@
 <template>
   <div class="hello">
-    <h1>模型與我</h1>
-
     <img src="/static/IMG_9836.JPG"/>
 
   </div>

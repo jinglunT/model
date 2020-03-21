@@ -67,7 +67,7 @@ html, body {
 }
 
 nav {
-  background-color: #ccc;
+  background-color: hsla(154, 100%, 36%, 1);
   padding: 1em;
 }
 
@@ -75,6 +75,7 @@ nav a {
   margin: 0 1em;
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
 nav a:hover {
@@ -83,11 +84,11 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: blue;
+  color: black;
 }
 
 .router-link-exact-active.router-link-active {
-  color: red;
+  color: hsla(168, 100%, 53%, 1);
 }
 
 </style>
