@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>模型與我</h1>
 
-
+    <img src="/static/IMG_9836.JPG"/>
 
   </div>
 </template>
@@ -20,6 +20,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img {
+  width: 100%;
+}
 h1, h2 {
   font-weight: normal;
 }
