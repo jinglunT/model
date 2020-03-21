@@ -45,6 +45,12 @@ export default {
 </script>
 
 <style>
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif,
                'Microsoft JhengHei', /*  中文字型 */
@@ -55,7 +61,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  background-color: #ccc;
+  padding: 1em;
+}
+
+nav a {
+  margin: 0 1em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .router-link-exact-active.router-link-active {
