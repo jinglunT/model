@@ -4,6 +4,9 @@
       <router-link to = "/">首頁</router-link>
       <router-link to = "/tools">工具</router-link>
       <router-link to = "/chat">留言板</router-link>
+      <router-link to = "/mywork">作品分享</router-link>
+      <router-link to = "/out">開箱</router-link>
+      <router-link to = "/teach">教學</router-link>
     </nav>
     <router-view :chats = "chats" @submit = "submit" />
     <!-- :chats = "chats" 是把 chats 送進 子元件裡 -->
