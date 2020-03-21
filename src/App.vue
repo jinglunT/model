@@ -77,8 +77,17 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: blue;
+}
+
 .router-link-exact-active.router-link-active {
-  /* 導行列被選到的部份 */
+  color: red;
 }
 
 </style>
