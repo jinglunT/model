@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img src="/static/IMG_9836.JPG"/>
+    <img src="/static/首頁背景.JPG"/>
 
   </div>
 </template>
