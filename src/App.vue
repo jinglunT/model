@@ -91,4 +91,22 @@ nav a:visited {
   color: hsla(168, 100%, 53%, 1);
 }
 
+@media screen and (min-width: 421px) {
+  .thin-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fat-only {
+    display: none !important;
+  }
+  nav {
+    padding: 0;
+  }
+  nav a {
+    margin: 0 2px;
+  }
+}
+
 </style>
