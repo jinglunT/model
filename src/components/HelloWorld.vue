@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img src="/static/首頁背景.JPG"/>
+    <img class = "fat-only" src="/static/首頁背景.JPG"/>
 
   </div>
 </template>
