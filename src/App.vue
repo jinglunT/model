@@ -6,7 +6,8 @@
       <router-link to = "/mywork">作品分享</router-link>
       <router-link to = "/teach">教學</router-link>
     </nav>
-    <router-view :chats = "chats" @submit = "submit" />
+    <router-view/>
+    <chat :chats = "chats" @submit = "submit" />
     <!-- :chats = "chats" 是把 chats 送進 子元件裡 -->
     <!-- @submit = "submit" 是聽 submit 事件時，運作submit函式 -->
   </div>
@@ -14,6 +15,7 @@
 
 <script>
 
+import Chat from './components/Chat'
 import { chatsRef } from './firebase/db'
 
 export default {
@@ -21,6 +23,7 @@ export default {
   firebase: {
     chats: chatsRef // 以firebase的chatRef 來構造chats(類似物件的串列)
   },
+  components: { Chat },
   data () {
     return {
       chats: undefined
