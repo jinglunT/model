@@ -13,5 +13,5 @@ export const db = firebase.initializeApp(
 ).database()
 
 export const chatsToolRef = db.ref('chatsTool') // export => 輸出
-export const chatsWorkRef = db.ref('chatsWorkRef') // export => 輸出
-export const chatsTeachRef = db.ref('chatsTeachRef') // export => 輸出
+export const chatsWorkRef = db.ref('chatsWork') // export => 輸出
+export const chatsTeachRef = db.ref('chatsTeach') // export => 輸出
