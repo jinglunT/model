@@ -9,15 +9,26 @@
         <p v-if="t.des">{{ t.des }}</p>
       </li>
     </ul>
+    <chat :chats = "chatsTool" @submit = "submit" />
   </div>
 </template>
 
 <script>
+
+import Chat from './Chat'
+
 export default {
   name: 'HelloWorld',
+  props: ['chatsTool'],
+  components: { Chat },
   data () {
     return {
       msg: '常用模型工具',
+      methods: {
+        submit: function (n, email, t) {
+          this.$emit('submit', n, email, t, 'chatsTool') // 對上層元件說'submit', 並傳n, email, t給它
+        }
+      },
       tools: [
         {src: 'IMG_9836.JPG', name: '常用工具', des: '我的常用工具'},
         {src: 'IMG_9840.JPG', name: '模型膠', des: '是一種高濃度的溶劑,可藉由溶解塑膠來黏合模型,圖中分別為"高流動型"(綠蓋)以及"一般型"(白蓋),高流動型的濃度較低,揮發速度較快,一般型則相反'},
