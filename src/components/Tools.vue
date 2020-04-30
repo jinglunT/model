@@ -35,6 +35,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p {
+  max-width: 600px;
+}
 img {
   width: 45%;
 }
