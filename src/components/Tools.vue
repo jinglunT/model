@@ -5,6 +5,7 @@
       <li v-for = "t in tools" v-bind:key = "t.src">
         <h3>{{ t.name }}:</h3>
         <img :src="'/static/' + t.src"/>
+        <br>
         <p v-if="t.des">{{ t.des }}</p>
       </li>
     </ul>
