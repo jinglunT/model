@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Tools from '@/components/Tools'
+import Out from '@/components/Tools'
 import MyWork from '@/components/MyWork'
 import Teach from '@/components/Teach'
 
