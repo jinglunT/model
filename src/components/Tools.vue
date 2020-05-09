@@ -16,8 +16,10 @@
       
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
-          <img class="left floated huge ui image" :src="'/static/' + t.src">
-          <div class="header">{{ t.name }}</div>
+          <div>
+            <img class="left huge ui image" :src="'/static/' + t.src">
+          </div>
+          <div class="ui header">{{ t.name }}</div>
           <div class="description" v-if="t.des">{{ t.des }}</div>
         </div>
       </div>
