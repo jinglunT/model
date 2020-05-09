@@ -10,7 +10,7 @@
       <label> Email: </label>
       <input type='email' v-model="myEmail" />
       <label> 請留言: </label>
-      <iput type='text' v-model="myText" placeholder="您想說什麼？"/>
+      <input type='text' v-model="myText" placeholder="您想說什麼？"/>
       <button @click="submit(myName, myEmail, myText)">留言</button>
     </form>
   </div>
