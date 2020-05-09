@@ -5,7 +5,7 @@
     <div class="ui cards">
       <div class="card" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
-          <img class="right floated mini ui image" :src="'/static/' + t.src">
+          <img class="right floated medium ui image" :src="'/static/' + t.src">
           <div class="header">{{ t.name }}</div>
           <div class="description" v-if="t.des">{{ t.des }}</div>
         </div>
