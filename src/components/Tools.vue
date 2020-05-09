@@ -13,7 +13,6 @@
       完成品不是模型. </p>
     </div>
     <div class="ui grid container">
-      
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
           <div>
@@ -49,9 +48,7 @@ export default {
         {src: 'IMG_0867.JPG', name: '盒繪', des: '一如往常的RG盒繪'},
         {src: 'IMG_0868.JPG', name: '板件', des: '一共只有9片框架,以RG來說算是偏少的,其中包含一片電鍍板件'},
         {src: 'IMG_0869.JPG', name: '電鍍板件', des: '雖然說電鍍是為了增添整個模型的質感,但是在C20與C21零件上卻造成了反效果,讓這2個零件充滿滿滿的玩具感'},
-        {src: 'IMG_9848.JPG', name: '說明書', des: '也是跟以往的RG風格一樣,簡潔乾淨'},
-        
-
+        {src: 'IMG_9848.JPG', name: '說明書', des: '也是跟以往的RG風格一樣,簡潔乾淨'}
       ]
     }
   }
