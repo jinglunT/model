@@ -16,7 +16,6 @@
   後期,媽媽跟告訴我不要被模型的模子給框住,做一些改造和背景. 這時候的我才開始製作模型場景.</p>
       <chat :chats = "chatsWork" @submit = "submit" />
     </div>
-  
   </div>
 </template>
 
