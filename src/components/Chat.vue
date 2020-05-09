@@ -3,7 +3,7 @@
     <h3> {{ msg }}</h3>
       <div class="comment" v-for = "c in chats" :key=" c.time">
         {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
-      </dev>
+      </div>
     <form>
       <label> 您的大名: </label>
       <input type='text' v-model="myName" />
