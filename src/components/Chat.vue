@@ -1,18 +1,24 @@
 <template>
-  <div class="ui comments">
-    <h3> {{ msg }}</h3>
-      <div class="comment" v-for = "c in chats" :key=" c.time">
-        {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
-      </div>
-    <form>
-      <label> 您的大名: </label>
-      <input type='text' v-model="myName" />
-      <label> Email: </label>
-      <input type='email' v-model="myEmail" />
-      <label> 請留言: </label>
-      <input type='text' v-model="myText" placeholder="您想說什麼？"/>
-      <button @click="submit(myName, myEmail, myText)">留言</button>
-    </form>
+  <div class="ui container left aligned">
+    <hr/>
+    <router-link to="/">回首頁</router-link>
+    <hr/>
+    <div class="ui comments">
+      <h3> {{ msg }}</h3>
+        <div class="comment" v-for = "c in chats" :key=" c.time">
+          <i class ="user icon"/> {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
+        </div>
+      <hr/>
+      <form class="ui form">
+        <label> 您的大名: </label>
+        <input type='text' v-model="myName" />
+        <label> Email: </label>
+        <input type='email' v-model="myEmail" />
+        <label> 請留言: </label>
+        <input type='text' v-model="myText" placeholder="您想說什麼？"/>
+        <button class="ui huge green button" @click="submit(myName, myEmail, myText)">留言</button>
+      </form>
+    </div>
   </div>
 
 </template>
