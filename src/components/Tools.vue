@@ -1,14 +1,16 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ul>
-      <li v-for = "t in tools" v-bind:key = "t.src">
-        <h3>{{ t.name }}:</h3>
-        <img :src="'/static/' + t.src"/>
-        <br>
-        <p v-if="t.des">{{ t.des }}</p>
-      </li>
-    </ul>
+
+    <div class="ui cards">
+      <div class="card" v-for = "t in tools" v-bind:key = "t.src">
+        <div class="content">
+          <img class="right floated medium ui image" :src="'/static/' + t.src">
+          <div class="header">{{ t.name }}</div>
+          <div class="description" v-if="t.des">{{ t.des }}</div>
+        </div>
+      </div>
+    </div>
     <chat :chats = "chatsTool" @submit = "submit" />
   </div>
 </template>
@@ -28,7 +30,7 @@ export default {
     }
   },
   data () {
-    return { 
+    return {
       msg: 'RG 1/144 Gundam Exia[開箱]',
       tools: [
         {src: 'IMG_0867.JPG', name: '盒繪', des: '一如往常的RG盒繪'},
