@@ -14,7 +14,7 @@
     </div>
     <div class="ui grid container">
       
-      <div class="eight wide column" v-for = "t in tools" v-bind:key = "t.src">
+      <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
           <img class="left floated huge ui image" :src="'/static/' + t.src">
           <div class="header">{{ t.name }}</div>
