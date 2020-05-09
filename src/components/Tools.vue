@@ -17,7 +17,7 @@
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
           <div>
-            <img class="left huge ui image" :src="'/static/' + t.src">
+            <img class="huge ui image" :src="'/static/' + t.src">
           </div>
           <div class="ui header">{{ t.name }}</div>
           <div class="description" v-if="t.des">{{ t.des }}</div>
@@ -73,5 +73,9 @@ img.small {
 }
 
 img.big {
+}
+
+.ui.image {
+  margin: 0 auto;
 }
 </style>
