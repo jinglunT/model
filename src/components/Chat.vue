@@ -1,11 +1,9 @@
 <template>
-  <div class="chats">
+  <div class="ui comments">
     <h3> {{ msg }}</h3>
-    <ul>
-      <li v-for = "c in chats" :key=" c.time">
+      <div class="comment" v-for = "c in chats" :key=" c.time">
         {{ c.n }} says: {{ c.t }} -- {{ parseTime(c.time) }}
-      </li>
-    </ul>
+      </dev>
     <form>
       <label> 您的大名: </label>
       <input type='text' v-model="myName" />
