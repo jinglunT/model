@@ -18,7 +18,7 @@
 import Chat from './Chat'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Teach',
   props: ['chatsTeach'],
   components: { Chat },
   methods: {
