@@ -36,8 +36,10 @@ export default {
     return {
       msg: '1/12 Shore Trooper[改造]',
       tools: [
-      {src: 'unnamed (11).jpg', name: '盒繪', des: '一張大臉加上本體,一如往常的RG盒繪,印刷技術也棒的無話可說。'}
-
+      {src: 'unnamed (11).jpg', name: '模型本體', des: '這次使用的模型是1/12的Shore Trooper(海岸士兵?)'},
+      {src: 'unnamed (7).jpg', name: '改造過後', des: '顏色基本上我是整個重新噴過了,身上還加上了一些布料增加真實感。橘色左手是模仿電影《成人世界》中的機器人CHAPPIE'},
+      {src: 'unnamed (5).jpg', name: '頭部', des: '這次使用的模型是1/12的Shore Trooper(海岸士兵?)'},
+      {src: 'unnamed (8).jpg', name: '披肩', des: '這次使用的模型是1/12的Shore Trooper(海岸士兵?)'}
 
 
 
