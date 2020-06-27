@@ -36,7 +36,7 @@ export default {
     return {
       msg: '1/12 Shore Trooper[改造]',
       tools: [
-      {src: 'unnamed (11).JPG', name: '盒繪', des: '一張大臉加上本體,一如往常的RG盒繪,印刷技術也棒的無話可說。'}
+      {src: 'unnamed (11).jpg', name: '盒繪', des: '一張大臉加上本體,一如往常的RG盒繪,印刷技術也棒的無話可說。'}
 
 
 
