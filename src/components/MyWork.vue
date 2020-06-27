@@ -42,6 +42,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+p {
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
+
 img {
   width: 45%;
 }
