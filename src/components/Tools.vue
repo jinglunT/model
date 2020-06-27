@@ -8,7 +8,7 @@
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
           <div>
-            <img class="huge ui image" :src="'/static/' + t.src">
+            <img class="huge ui image" v-if = "t.src" :src="'/static/' + t.src">
           </div>
           <div class="ui header">{{ t.name }}</div>
           <div class="description" v-if="t.des">{{ t.des }}</div>
@@ -40,7 +40,8 @@ export default {
         {src: 'IMG_0867.JPG', name: '盒繪', des: '一張大臉加上本體,一如往常的RG盒繪,印刷技術也棒的無話可說。'},
         {src: 'IMG_0868.JPG', name: '板件', des: '一共只有9片框架,藍色與白色的成型色本身就很好看了,而且在這兩種顏色上還有做個別的深淺分色處裡,讓模型顯得更有層次感。'},
         {src: 'IMG_0869.JPG', name: '電鍍板件', des: '雖然說電鍍是為了增添整個模型的質感,但是在C20與C21零件上卻造成了反效果,讓這2個零件充滿滿滿的玩具感,所以之後一定會洗掉從噴。'},
-        {src: 'IMG_9848.JPG', name: '說明書', des: '跟所有的RG規格的鋼彈模型一樣,正面是大臉,背面是介紹貼紙還有塗裝參考。'}
+        {src: 'IMG_9848.JPG', name: '說明書', des: '跟所有的RG規格的鋼彈模型一樣,正面是大臉,背面是介紹貼紙還有塗裝參考。'},
+        {name: '心得', des: '這次的RG能天使,老實說真的是沒有什麼太大的亮點,但是它還是有符合RG規格的標準,擁有精美分色還有細節的刻線'}
       ]
     }
   }
