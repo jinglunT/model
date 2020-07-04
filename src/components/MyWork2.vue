@@ -2,8 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div class="ui segment container">
-       <router-link to = "/mywork2">作品分享</router-link>
-       <p>哈囉</p>
+      <p>這是我第一次嘗試將模型整個改色的作品,這件作品的動機是在看完星際大戰系列電影後才出現的。當時我發現,劇中有很多過目即忘的外星人與賞金獵人上的裝甲其實都是用帝國士兵的裝甲改造而成的。於是,我便有了"製作屬於自己的星戰角色"的這個念頭。</p>
     </div>
     <div class="ui grid container">
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Tools from '@/components/Tools'
 import MyWork from '@/components/MyWork'
+import MyWork2 from '@/components/MyWork2'
 import Teach from '@/components/Teach'
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
       path: '/mywork',
       name: 'MyWork',
       component: MyWork
+    },
+    {
+      path: '/mywork2',
+      name: 'MyWork2',
+      component: MyWork2
     },
     {
       path: '/teach',
