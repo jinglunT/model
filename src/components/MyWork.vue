@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <vue-headful title="1/12 Shore Trooper[改造.改色]"/>
     <h1>{{ msg }}</h1>
     <div class="ui segment container">
        <router-link to = "/mywork2">作品分享</router-link>

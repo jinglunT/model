@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { rtdbPlugin } from 'vuefire'
+import vueHeadful from 'vue-headful'
+Vue.component('vue-headful', vueHeadful)
 
 Vue.config.productionTip = false
 Vue.use(rtdbPlugin)

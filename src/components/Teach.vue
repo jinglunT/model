@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <vue-headful title="常用工具"/>
     <h1>{{ msg }}</h1>
     <ul>
       <li v-for = "t in teachs" v-bind:key = "t.src">
