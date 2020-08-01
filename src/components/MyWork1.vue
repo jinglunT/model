@@ -3,8 +3,7 @@
     <vue-headful title="1/12 Shore Trooper[改造.改色]"/>
     <h1>{{ msg }}</h1>
     <div class="ui segment container">
-       <router-link to = "/mywork2">作品分享</router-link>
-       <p>哈囉</p>
+       <p>今年3月萬代發售RG版本的初號機後,馬上又在6月推出了同規格的零號機。雖然這次的零號機幾乎可以算是初號機的異色版(本體除了頭.胸.肩以外的零件完全與初號機相同),但是DX版附上的陽電子炮也算是夠有誠意了</p>
     </div>
     <div class="ui grid container">
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
