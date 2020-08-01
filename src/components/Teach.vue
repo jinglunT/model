@@ -5,7 +5,7 @@
     <ul>
       <li v-for = "t in teachs" v-bind:key = "t.src">
         <h3>{{ t.name }}:</h3>
-        <img :src="'/static/' + t.src"/>
+        <img :src="'./static/' + t.src"/>
         <br>
         <p v-if="t.des">{{ t.des }}</p>
       </li>

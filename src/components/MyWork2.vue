@@ -9,7 +9,7 @@
       <div class="sixteen wide column" v-for = "t in tools" v-bind:key = "t.src">
         <div class="content">
           <div>
-            <img class="huge ui image" v-if = "t.src" :src="'/static/' + t.src">
+            <img class="huge ui image" v-if = "t.src" :src="'./static/' + t.src">
           </div>
           <div class="ui header">{{ t.name }}</div>
           <div class="description" v-if="t.des">{{ t.des }}</div>
