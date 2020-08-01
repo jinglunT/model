@@ -65,4 +65,9 @@ img.small {
 
 img.big {
 }
+
+.ui.image {
+  margin: 0 auto;
+}
+
 </style>
