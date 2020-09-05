@@ -5,7 +5,7 @@
     <ul>
       <li v-for = "t in teachs" v-bind:key = "t.src">
         <h3>{{ t.name }}:</h3>
-        <img :src="'./static/' + t.src"/>
+        <img class ="drag" :src="'./static/' + t.src"/>
         <br>
         <p v-if="t.des">{{ t.des }}</p>
       </li>
@@ -17,7 +17,10 @@
 <script>
 
 import Chat from './Chat'
-
+import $ from 'jquery'
+import 'jquery-ui-dist/jquery-ui'
+window.jQuery = $
+require('jquery-ui-touch-punch')
 export default {
   name: 'Teach',
   props: ['chatsTeach'],
@@ -43,7 +46,8 @@ export default {
 
       ]
     }
-  }
+  },
+  mounted () {     $('.drag').draggable();   }
 }
 </script>
 
