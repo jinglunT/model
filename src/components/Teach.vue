@@ -21,6 +21,7 @@ import $ from 'jquery'
 import 'jquery-ui-dist/jquery-ui'
 window.jQuery = $
 require('jquery-ui-touch-punch')
+
 export default {
   name: 'Teach',
   props: ['chatsTeach'],
@@ -47,7 +48,9 @@ export default {
       ]
     }
   },
-  mounted () {     $('.drag').draggable();   }
+  mounted () { 
+    $('.drag').draggable()
+  }
 }
 </script>
 
