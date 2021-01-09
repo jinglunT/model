@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav id="navbar">
-      <router-link to = "/"><i class="home icon">首頁</i></router-link>
+      <router-link to = "/"><i class="home icon"></i>首頁</router-link>
       <router-link to = "/tools">開箱</router-link>
       <router-link to = "/mywork">作品分享</router-link>
       <router-link to = "/teach">教學</router-link>
