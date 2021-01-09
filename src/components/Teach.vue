@@ -17,10 +17,6 @@
 <script>
 
 import Chat from './Chat'
-import $ from 'jquery'
-import 'jquery-ui-dist/jquery-ui'
-window.jQuery = $
-require('jquery-ui-touch-punch')
 
 export default {
   name: 'Teach',
@@ -49,7 +45,6 @@ export default {
     }
   },
   mounted () { 
-    $('.drag').draggable()
   }
 }
 </script>
