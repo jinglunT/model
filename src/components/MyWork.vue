@@ -19,8 +19,9 @@
               <div class="ui row">
                 <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
               </div>
-              <div class="ui row">
+              <div class="ui row">               
                 <p>製作時間 : 2週</p>
+            <br><p>油漆色號 : 田宮XF-64，田宮X-12，田宮X-6，田宮XF-72，自調海軍藍，自調棕</p>
               </div>
           </div>
        </div>
@@ -58,6 +59,7 @@ p {
   display: inline-block;
   max-width: 600px;
   text-align: left;
+  margin-top: 2em;
 }
 
 img {
@@ -74,5 +76,9 @@ img.big {
   margin-left: 100px;
   font-size: 22px;
   color: hsla(169, 60%, 50%, 1);
+}
+
+.grid {
+  text-align: left
 }
 </style>
