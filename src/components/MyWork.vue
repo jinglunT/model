@@ -12,9 +12,15 @@
      <div class="ui segment container">
       <div class="ui grid">
        <div class="ui row">
-          <img src = "/static/unnamed (5).jpg">
-          <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
-          <br><p>製作時間 : 2週</p>
+          <div class="column">
+            <img src = "/static/unnamed (5).jpg">
+              <div class="ui row">
+                <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
+              </div>
+              <div class="ui row">
+                <p>製作時間 : 2週</p>
+              </div>
+          </div>
        </div>
       </div>
     </div>
