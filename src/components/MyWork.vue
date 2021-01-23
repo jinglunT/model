@@ -5,10 +5,16 @@
     <div class="ui segment container">
       <div class="ui grid">
        <div class="ui row">
-          <router-link to = "/mywork1">作品1</router-link>
+          <router-link to = "/mywork1">RG EVA新世紀福音戰士 零號機</router-link>
        </div>
+      </div>
+    </div>
+     <div class="ui segment container">
+      <div class="ui grid">
        <div class="ui row">
-          <router-link to = "/mywork2">作品2</router-link>
+          <img src = "/static/unnamed (5).jpg">
+          <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
+          <br><p>製作時間 : 2週</p>
        </div>
       </div>
     </div>
@@ -47,7 +53,7 @@ p {
 }
 
 img {
-  width: 45%;
+  width: 33%;
 }
 
 img.small {
@@ -58,5 +64,7 @@ img.big {
 
 .row a {
   margin-left: 100px;
+  font-size: 22px;
+  color: hsla(169, 60%, 50%, 1);
 }
 </style>

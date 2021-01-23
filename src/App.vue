@@ -69,15 +69,15 @@ html, body {
 }
 
 nav {
-  background-color: hsla(154, 100%, 36%, 1);
-  padding: 1em;
+  background-color: hsla(0, 0%, 16%, 1);
+  padding: 2.3em;
 }
 
 nav a {
   margin: 0 1em;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 nav a:hover {
@@ -86,11 +86,11 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: black;
+  color: white;
 }
 
 .router-link-exact-active.router-link-active {
-  color: hsla(168, 100%, 53%, 1);
+  color: hsla(166, 100%, 54%, 1);
 }
 
 @media screen and (min-width: 421px) {
