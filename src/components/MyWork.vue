@@ -14,6 +14,8 @@
        <div class="ui row">
           <div class="column">
             <img src = "/static/unnamed (5).jpg">
+          </div>
+          <div class="column">
               <div class="ui row">
                 <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
               </div>
