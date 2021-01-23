@@ -12,10 +12,10 @@
      <div class="ui segment container">
       <div class="ui grid">
        <div class="ui row">
-          <div class="column">
+          <div class="eight wide column">
             <img src = "/static/unnamed (5).jpg">
           </div>
-          <div class="column">
+          <div class="eight wide column">
               <div class="ui row">
                 <router-link to = "/mywork2">1/12 SHORE TROOPER[改色]</router-link>
               </div>
@@ -61,7 +61,7 @@ p {
 }
 
 img {
-  width: 33%;
+  width: 100%;
 }
 
 img.small {
