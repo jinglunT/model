@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Tools from '@/components/Tools'
+import Tools1 from '@/components/Tools1'
+import Tools2 from '@/components/Tools2'
 import MyWork from '@/components/MyWork'
 import MyWork1 from '@/components/MyWork1'
 import MyWork2 from '@/components/MyWork2'
@@ -20,6 +22,16 @@ export default new Router({
       path: '/tools',
       name: 'Tools',
       component: Tools
+    },
+    {
+      path: '/tools1',
+      name: 'Tools1',
+      component: Tools1
+    },
+    {
+      path: '/tools2',
+      name: 'Tools2',
+      component: Tools2
     },
     {
       path: '/mywork',
