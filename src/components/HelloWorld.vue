@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <vue-headful title="首頁"/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MWp60UVNFl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     <img class = "fat-only" :src="'./static/首頁背景.JPG'"/>
     <img class = "thin-only" :src="'./static/首頁背景.JPG'"/>
   </div>
