@@ -8,6 +8,9 @@ import MyWork from '@/components/MyWork'
 import MyWork1 from '@/components/MyWork1'
 import MyWork2 from '@/components/MyWork2'
 import Teach from '@/components/Teach'
+import Teach1 from '@/components/Teach1'
+import Teach2 from '@/components/Teach2'
+import Teach3 from '@/components/Teach3'
 
 Vue.use(Router)
 
@@ -52,6 +55,21 @@ export default new Router({
       path: '/teach',
       name: 'Teach',
       component: Teach
+    },
+    {
+      path: '/teach1',
+      name: 'Teach1',
+      component: Teach1
+    },
+    {
+      path: '/teach2',
+      name: 'Teach2',
+      component: Teach2
+    },
+    {
+      path: '/teach3',
+      name: 'Teach3',
+      component: Teach3
     }
   ]
 })
