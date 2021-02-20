@@ -51,6 +51,11 @@ export default {
 
 <style>
 
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 html, body {
   padding: 0;
   margin: 0;
