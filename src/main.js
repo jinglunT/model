@@ -7,6 +7,9 @@ import { rtdbPlugin } from 'vuefire'
 import vueHeadful from 'vue-headful'
 Vue.component('vue-headful', vueHeadful)
 
+import ImageUploader from 'vue-image-upload-resize'
+Vue.use(ImageUploader)
+
 Vue.config.productionTip = false
 Vue.use(rtdbPlugin)
 
