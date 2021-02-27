@@ -6,15 +6,30 @@
       <router-link to = "/mywork">作品分享</router-link>
       <router-link to = "/teach">教學</router-link>
     </nav>
+    <image-uploader
+      :debug="1"
+      :maxWidth="512"
+      :quality="0.7"
+      :autoRotate=true
+      outputFormat="verbose"
+      :preview=false
+      :className="['fileinput', { 'fileinput--loaded' : hasImage }]"
+      :capture="false"
+      accept="video/*,image/*"
+      doNotResize="['gif', 'svg']"
+      @input="setImage"
+    ></image-uploader>
     <router-view :chatsTool = "chatsTool" :chatsWork = "chatsWork" :chatsTeach = "chatsTeach" @submit = "submit"/>
+
     <!-- :chats = "chats" 是把 chats 送進 子元件裡 -->
     <!-- @submit = "submit" 是聽 submit 事件時，運作submit函式 -->
+
   </div>
 </template>
 
 <script>
 
-import { chatsToolRef, chatsWorkRef, chatsTeachRef } from './firebase/db'
+import { chatsToolRef, chatsWorkRef, chatsTeachRef, db2 } from './firebase/db'
 
 export default {
   name: 'App',
@@ -25,12 +40,18 @@ export default {
   },
   data () {
     return {
+      hasImage: false,
       chatsTool: undefined,
       chatsWork: undefined,
       chatsTeach: undefined
     }
   },
   methods: {
+    setImage: function(output) {
+      this.hasImage = true
+      // console.log(output.dataUrl)
+      this.upload(output.dataUrl)
+    },
     submit: function (n, email, t, refName) {
       var o = {
         n: n,
@@ -44,6 +65,19 @@ export default {
       } else {
         window.alert('請輸入留言')
       }
+    },
+    upload: function (file) {
+      // Create a root reference
+      var storageRef = db2.ref();
+
+      const date = new Date().toString()
+
+      // Create a reference to 'mountains.jpg'
+      var mountainsRef = storageRef.child(date + '.png');
+
+      mountainsRef.putString(file, 'data_url').then(() => {
+        console.log('Uploaded a blob or file!');
+      });
     }
   }
 }
