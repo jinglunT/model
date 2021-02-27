@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <vue-headful title="常用工具"/>
+    <vue-headful title="工具介紹"/>
     <h1>{{ msg }}</h1>
     <div class="ui segment container">
       <div class="ui grid">
@@ -10,7 +10,7 @@
           </div>
           <div class="eight wide column">
               <div class="ui row">
-                <router-link to = "/teach1">常用工具</router-link>
+                <router-link to = "/teach1">工具介紹 第一篇</router-link>
               </div>
               <div class="ui row">               
                 <p>斜口鉗，筆刀，水砂紙，手鑽，模型膠，噴筆，防毒面具</p>

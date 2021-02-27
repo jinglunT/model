@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
-    <vue-headful title="工具介紹"/>
+    <vue-headful title="工具介紹 第一篇"/>
     <h1>{{ msg }}</h1>
+    <p> 簡單介紹一下我平常常用的工具</p>
     <ul>
       <li v-for = "t in teachs" v-bind:key = "t.src">
         <h3>{{ t.name }}:</h3>
@@ -12,6 +13,7 @@
     </ul>
     <chat :chats = "chatsTeach" @submit = "submit" />
   </div>
+
 </template>
 
 <script>
@@ -30,9 +32,8 @@ export default {
   },
   data () {
     return {
-       msg: '工具介紹',
-      teachs: [
-        {src: 'IMG_9836.JPG', name: '工具介紹 第一篇', des: '工具介紹'},
+       msg: '工具介紹 第一篇',
+      teachs: [      
         {src: 'IMG_9840.JPG', name: '模型膠', des: '是一種高濃度的溶劑，可藉由溶解塑膠來黏合模型，圖中分別為"高流動型"(綠蓋)以及"一般型"(白蓋)，高流動型的濃度較低，揮發速度較快,一般型則相反'},
         {src: 'IMG_9843.JPG', name: '斜口鉗', des: '再把零件從框架上剪下來時一定會用到，斜口鉗同時也可以對模型做初步的修剪'},
         {src: 'IMG_9848.JPG', name: '筆刀', des: '修剪水口(湯口)必要的工具,但是因為操作起來較為耗時，所以近年來以普遍被"神之手斜口鉗"取代'},
